@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"allowJs": true,
+		"lib": ["dom", "dom.iterable", "esnext", "ES6", "webworker"],
+		"outDir": "./build",
+		"strictNullChecks": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "Node",
+		//		"noImplicitAny": false,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": false,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"noImplicitThis": false,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "preserve",
+		"baseUrl": "./",
+		"paths": {
+			// "@/*": ["src/*"],
+			// "@config": ["config"],
+			"@components/*": ["components/*"],
+			"@pages/*": ["pages/*"],
+			"@src/*": ["src/*"],
+			"@public/*": ["public/*"]
+		},
+		"incremental": true
+	},
+	"include": ["src", "pages", "src/custom.d.ts", "public/auth.ts"],
+	"exclude": ["node_modules", "babel.config.js"]
+}
